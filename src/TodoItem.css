@@ -1,0 +1,93 @@
+.TodoItem{
+	cursor:pointer;
+	display:block;
+	line-height: 56px;
+	padding: 0 15px; 
+	position: relative;    
+}
+
+.TodoItem:hover{
+	background-color: #2a3353;
+	color:#8284a3;    
+}
+
+.TodoItem span{
+    margin-left:30px;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;	
+}
+
+.TodoItem a{
+	background-color:#D81029;
+	border-radius:50%;
+    color:#fff;
+    display: none;
+	float:right;
+	font-weight: bold;
+	line-height: normal;
+	height:16px;
+	margin-top: 20px;
+    text-align: center;
+	text-decoration: none;
+	width:16px;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;	    
+}
+
+.TodoItem:hover a{
+	display: block;    
+}
+
+.TodoItem a:hover{
+	background-color:#fff;
+    color:#D81029;  
+}
+
+.TodoItem a b{
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align:top;
+}
+
+.TodoItem input[type="checkbox"]{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 22px;
+    left: 17px;
+    z-index: 3;
+}
+
+.TodoItem input[type="checkbox"] + i{
+	background-color: #404a6e;
+	border-radius: 50%;
+	display: block;
+	height: 16px;
+	position: absolute;
+	top:20px;
+	width: 16px;	
+	z-index: 1;    
+}
+
+.TodoItem input[type="checkbox"]:checked + i:after{
+	background-color: #6E6E96;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height:8px;
+	left:4px;
+	position: absolute;
+	top:4px;
+	width:8px;	
+	z-index: 2;    
+}
+
+.TodoItem input[type="checkbox"]:checked ~ span{
+    color: #586186;
+	text-decoration: line-through;
+}

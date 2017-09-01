@@ -1,0 +1,9 @@
+body {
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/vintage-concrete.png);
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
