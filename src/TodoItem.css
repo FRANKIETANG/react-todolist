@@ -1,4 +1,8 @@
-.TodoItem{
+/*theme dark*/
+.AppDark .TodoItem{
+	background-color: #262e4c;
+	border-bottom:1px solid #1c2340;
+	color: #b1b2c9;
 	cursor:pointer;
 	display:block;
 	line-height: 56px;
@@ -6,12 +10,12 @@
 	position: relative;    
 }
 
-.TodoItem:hover{
+.AppDark .TodoItem:hover{
 	background-color: #2a3353;
 	color:#8284a3;    
 }
 
-.TodoItem span{
+.AppDark .TodoItem span{
     margin-left:30px;
 	-webkit-transition: all .2s linear;
 	   -moz-transition: all .2s linear;
@@ -19,7 +23,7 @@
 		    transition: all .2s linear;	
 }
 
-.TodoItem a{
+.AppDark .TodoItem a{
 	background-color:#D81029;
 	border-radius:50%;
     color:#fff;
@@ -38,23 +42,23 @@
 		    transition: all .2s linear;	    
 }
 
-.TodoItem:hover a{
+.AppDark .TodoItem:hover a{
 	display: block;    
 }
 
-.TodoItem a:hover{
+.AppDark .TodoItem a:hover{
 	background-color:#fff;
     color:#D81029;  
 }
 
-.TodoItem a b{
+.AppDark .TodoItem a b{
     font-size: 12px;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align:top;
 }
 
-.TodoItem input[type="checkbox"]{
+.AppDark .TodoItem input[type="checkbox"]{
     cursor: pointer;
     opacity: 0;
     position: absolute;
@@ -63,7 +67,7 @@
     z-index: 3;
 }
 
-.TodoItem input[type="checkbox"] + i{
+.AppDark .TodoItem input[type="checkbox"] + i{
 	background-color: #404a6e;
 	border-radius: 50%;
 	display: block;
@@ -74,7 +78,7 @@
 	z-index: 1;    
 }
 
-.TodoItem input[type="checkbox"]:checked + i:after{
+.AppDark .TodoItem input[type="checkbox"]:checked + i:after{
 	background-color: #6E6E96;
 	border-radius: 50%;
 	content: '';
@@ -87,7 +91,105 @@
 	z-index: 2;    
 }
 
-.TodoItem input[type="checkbox"]:checked ~ span{
+.AppDark .TodoItem input[type="checkbox"]:checked ~ span{
     color: #586186;
+	text-decoration: line-through;
+}
+
+/*theme light*/
+.AppLight .TodoItem{
+	background-color: #D8D8D8;
+	border-bottom:1px solid #B8B8B8;
+	color: #6A6464;
+	cursor:pointer;
+	display:block;
+	line-height: 56px;
+	padding: 0 15px; 
+	position: relative;    
+}
+
+.AppLight .TodoItem:hover{
+	background-color: #E8E8E8;
+	color:#9B9090;    
+}
+
+.AppLight .TodoItem span{
+    margin-left:30px;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;	
+}
+
+.AppLight .TodoItem a{
+	background-color:#D81029;
+	border-radius:50%;
+    color:#FFFFFF;
+    display: none;
+	float:right;
+	font-weight: bold;
+	line-height: normal;
+	height:16px;
+	margin-top: 20px;
+    text-align: center;
+	text-decoration: none;
+	width:16px;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;	    
+}
+
+.AppLight .TodoItem:hover a{
+	display: block;    
+}
+
+.AppLight .TodoItem a:hover{
+	background-color:#5C5C5C;
+    color:#FFAAB4;  
+}
+
+.AppLight .TodoItem a b{
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align:top;
+}
+
+.AppLight .TodoItem input[type="checkbox"]{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 22px;
+    left: 17px;
+    z-index: 3;
+}
+
+.AppLight .TodoItem input[type="checkbox"] + i{
+	background-color: #B3BAD3;
+	border-radius: 50%;
+	display: block;
+	height: 16px;
+	position: absolute;
+	top:20px;
+	width: 16px;	
+	z-index: 1;    
+}
+
+.AppLight .TodoItem input[type="checkbox"]:checked + i:after{
+	background-color: #6E6E96;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height:8px;
+	left:4px;
+	position: absolute;
+	top:4px;
+	width:8px;	
+	z-index: 2;    
+}
+
+.AppLight .TodoItem input[type="checkbox"]:checked ~ span{
+    color: #AFB0B6;
 	text-decoration: line-through;
 }

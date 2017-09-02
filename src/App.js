@@ -14,6 +14,7 @@ class App extends Component {
       user: getCurrentUser() || {},
       newTodo: '',
       todoList: [],
+      theme: "AppDark",
     }
     this.initTodoGetByUser()
   }
@@ -34,13 +35,15 @@ class App extends Component {
     console.log(todos)
 
     return (
-      <div className="App">
+      <div className={this.state.theme + ' App'}>
         <h2>
-            {this.state.user.username||'我'} 的任务
-            {this.state.user.id ? 
-            <button onClick={this.signOut.bind(this)}>
-              登出
-            </button> : null}
+          <a onClick={this.changeTheme.bind(this)}>
+            {this.state.user.username||'我'}  ✪TodoList✪
+          </a>
+          {this.state.user.id ? 
+          <button onClick={this.signOut.bind(this)}>
+            登出
+          </button> : null}
         </h2>
         
         <ol className="todoList">
@@ -105,7 +108,6 @@ class App extends Component {
       todo.status = oldStatus
       this.setState(this.state)      
     })
-
   }
   changeTitle(e){
     this.setState({
@@ -129,6 +131,17 @@ class App extends Component {
     },(error)=>{
       console.log(error)
     })
+  }
+  changeTheme(){
+    if(this.state.theme === "AppDark"){
+      this.setState({
+        theme: "AppLight"
+      })
+    }else{
+      this.setState({
+        theme: "AppDark"
+      })
+    }
   }
 }
 
