@@ -1,25 +1,27 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*:after{
+*:after {
     box-sizing: border-box;
 }
 
-*:before{
+*:before {
     box-sizing: border-box;
 }
 
-ul,ol,dl{
+ul,
+ol,
+dl {
     list-style: none;
 }
 
-a{
+a {
     color: inherit;
 }
 
-*:focus{
+*:focus {
     outline: none !important;
 }

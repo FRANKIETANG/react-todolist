@@ -7,29 +7,32 @@
   padding: 0;
   min-height: 20em;
   min-width: 100%;
-  box-shadow: 0 0 1em hsla(0, 0%, 0%, 0.15); 
+  box-shadow: 0 0 1em hsla(0, 0%, 0%, 0.15);
 }
 
-.App h2{
-	background-color: #5fd629;
-	/*border-top-left-radius: 4px;*/
-	/*border-top-right-radius: 4px;*/
-	color:#fff;
-	font-size:16px;
-	font-weight: 100;
-	line-height: 56px;
-	padding-left: 15px;
-	margin:0;  
+.App h2 {
+  background-color: #5fd629;
+  /*border-top-left-radius: 4px;*/
+  /*border-top-right-radius: 4px;*/
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 56px;
+  padding-left: 15px;
+  margin: 0;
 }
 
-.App h2{
-	box-sizing: border-box;
+.App h2 {
+  box-sizing: border-box;
 }
+
+
 /*signOut but*/
-.App h2 button{
-	float: right;
-	margin-top: 0.9em;
-	margin-right: 0.8em;
+
+.App h2 button {
+  float: right;
+  margin-top: 0.9em;
+  margin-right: 0.8em;
   background: #338033;
   color: #ccc;
   width: 50px;
@@ -63,6 +66,6 @@
   cursor: pointer;
 }
 
-.App h2 a{
+.App h2 a {
   cursor: pointer;
 }
